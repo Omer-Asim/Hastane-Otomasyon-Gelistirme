@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/bootstrap.js" charset="utf-8"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <%-include("header")%>
+
+
+
+    <main class="form-signin ">
+        <form class="w-25" action="/formgonder" method="post">
+
+            <img class="my-3" class="img-thumbnail img-fluid "
+                src="https://www.genesishospital.com.tr/wp-content/uploads/2019/12/QM7A1900-copy.jpg" alt="">
+
+            <h1 class="h3 mb-3 fw-normal">Lütfen Randevu Bilgilerinizi Giriniz</h1>
+
+            <input type="text" class="form-control" name="tc" pattern="\d{11}" placeholder="TC Kimlik No" required="">
+            <input type="text" class="form-control my-3" name="isim" placeholder="İsim" required="">
+            <input type="text" class="form-control" name="soyisim" placeholder="Soyisim" required="">
+            <label for="dogumTarihi">Lütfen Doğum Tarihini Giriniz : </label>
+            <input type="date" class="d-block w-75 shadow" required placeholder="Randevu Tarihi" name="dogumTarihi"
+                min="1930-01-01">
+            <label for="polikinik" class="float-left shadow d-block  ">Seçmek İstediğiniz Polikinik :</label>
+            <select id="polikinik" name="polikinik" class="float-left w-75  shadow">
+                <% for(var i=0 ; i <deneme.length; i++){ %>
+                <option value="<%=deneme[i].polikinikId %>"> <%=deneme[i].adi %> </option>
+                <%}%>
+            </select>
+            <label for="" class="d-block float-left shadow">Lütfen Randevu Tarihi Seçiniz</label>
+            <input type="date" class="d-block w-75 shadow" required placeholder="Randevu Tarihi" name="randevutarihi"
+                min="2021-01-19">
+                <label for="" class="d-block float-left shadow">Lütfen Randevu Saati Seçiniz</label>
+            <input type="time" name="randevuSaati" id=""  class="d-block w-75 shadow">
+
+               
+            <input class="w-100 btn btn-lg btn-danger mt-3" type="submit"></input>
+            <p class="mt-5 mb-3 text-muted">© 2021</p>
+        </form>
+    </main>
+
+
+
+    <!-- <%-include("footer")%> -->
+
+</body>
+
+</html>

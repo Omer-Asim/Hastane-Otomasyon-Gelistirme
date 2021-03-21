@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <%-include("header")%>
+
+
+
+    <header class="container d-flex align-items-center justify-content-center" style="height: 50vh;">
+        <form action="/kayit-formu" method="post" class="kayıtolFormu ">
+
+            <div class="h2 py-2 text-center text-dark"> Yeni Hesap Oluştur</div>
+            <input type="text" name="" id="" class="shadow-lg" placeholder="Kullanıcı Adı">
+            <input type="email" class="shadow-lg" required name="mail" value="" placeholder="E-posta  ">
+            <input type="email" class="shadow-lg" required name="" value="" placeholder="E-posta (tekrar) ">
+            <input type="password" name="sifre" value="" required placeholder="Şifre">
+            <input type="password" name="" class="shadow-lg" value="" required placeholder="Şifre (tekrar)">
+            <input type="checkbox" name=""  id=""> <span> <a href="#">Kullanıcı sözleşmesini okudum ve kabul ediyorum.</a> </span>
+            <input type="submit" class="text-white shadow font-weight-bold bg-dark" value="Kaydı Tamamla " class="">
+
+        </form>
+    </header>
+
+</body>
+
+</html>

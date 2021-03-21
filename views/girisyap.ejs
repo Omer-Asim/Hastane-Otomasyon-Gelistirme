@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/bootstrap.js" charset="utf-8"></script>
+    <title>Document</title>
+</head>
+<body style=background-image:url(images/2.jpg);background-repeat:no-repeat;object-fit:cover;background-position:center; >
+        <%-include("header")%>
+
+    <div class="container d-flex align-items-center justify-content-center">
+
+        
+        <form action="/kullanici-girisi" method="post" class="formelementi">
+            
+                <div class="h2 py-2 text-center text-dark"> KULLANICI GİRİŞİ</div>
+                <input type="email"  class="border-0"  required   name="mail" value="" placeholder="MAİL ADRESİNİZ ">
+                <input type="password" name="sifre" value="" required placeholder="ŞİFRENİZ">
+                <div>
+                    <input type="checkbox" name="checkbox" id=""> <span class="h5 text-white font-weight-bold">Beni hatırla</span>
+                </div>
+                <input type="submit" class="text-white font-weight-bold bg-dark" value="Giriş Yap" class="" >
+         
+            
+
+            
+    
+    
+    
+        </form>
+    
+
+
+    </div>
+
+    
+</body>
+</html>

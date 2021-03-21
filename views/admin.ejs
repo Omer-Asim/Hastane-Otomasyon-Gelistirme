@@ -1,0 +1,88 @@
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/style.css">
+<script src="/js/bootstrap.js" charset="utf-8"></script>
+
+
+<%-include("header")%>
+
+<div class="row p-5 ">
+    <div class="col alert alert-info d-flex justify-content-center p-5">
+
+
+
+        <ol class="p-5 shadow mx-3 bg-light">
+            <div class="h3">HASTA İSMİ</div>
+
+
+            <% for(var i = 0 ; i < hastalar.length ; i++){ %>
+            <li class="fa-ul"> <%= hastalar[i].isim%> </li>
+            <div>
+
+            </div>
+            <% } %>
+
+        </ol>
+
+
+        <ol class="p-5 shadow mx-3 bg-light">
+            <div class="h3">HASTA İSMİ</div>
+
+            <% for(var i = 0 ; i < hastalar.length ; i++){ %>
+            <li class="fa-ul"> <%= hastalar[i].soyisim%> </li>
+            <% } %>
+        </ol>
+
+        <ol class="p-5 shadow mx-3 bg-light">
+            <div class="h3">HASTA İSMİ</div>
+
+            <% for(var i = 0 ; i < hastalar.length ; i++){ %>
+            <li class="fa-ul"> <%= hastalar[i].tc%> </li>
+            <% } %>
+        </ol>
+
+        <ol class="p-5 shadow mx-3 bg-light">
+            <div class="h3">HASTA İSMİ</div>
+
+            <% for(var i = 0 ; i < hastalar.length ; i++){ %>
+            <li class="fa-ul"> <%= hastalar[i].dogumtarihi%> </li>
+            <% } %>
+        </ol>
+
+        <ol class="p-5 shadow mx-3 bg-light">
+            <div class="h3">HASTA İSMİ</div>
+
+            <% for(var i = 0 ; i < hastalar.length ; i++){ %>
+            <li class="fa-ul"> <%= hastalar[i].randevuSaati%> </li>
+            <% } %>
+        </ol>
+
+        <ol class="p-5 shadow mx-3 bg-light">
+            <div class="h3">HASTA İSMİ</div>
+
+            <% for(var i = 0 ; i < hastalar.length ; i++){ %>
+            <li class="fa-ul"> <%= hastalar[i].hastaId%> </li>
+
+
+            <% } %>
+        </ol>
+
+
+
+        <div class="col">
+            <% for(var i = 0 ; i < hastalar.length ; i++){ %>
+            <form action="/yazisil" method="get">
+                <input  class="d-none" name="hastaId" id="id" value="<%= hastalar[i].hastaId%>">
+                <button type="submit" class="btn btn-danger my-3">SİL</button>
+            </form>
+            <% } %>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+</div>

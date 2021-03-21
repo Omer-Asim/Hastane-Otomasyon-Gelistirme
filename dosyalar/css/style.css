@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.form-signin img {
+   max-width: 100%;
+   max-height: 100%;
+   border-radius: 10px;;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+#polikinik {
+    /* height: 5vh; */
+}
+
+
+
+/* style=background-image:url(images/1.jpg);background-size: cover;  */
+
+
+
+/* div.container {
+    background-color:cornflowerblue;
+    max-height: 100vh;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.formelementi input[type="submit"]:hover{
+    background-color:crimson !important;
+    transition: 1000ms;
+    transform: translateY(4px);
+    border-radius: 10px;
+    outline: darkblue;
+    border: none;
+   
+
+}
+.formelementi input:focus{
+    background-color:darkslateblue; 
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.formelementi input{
+border-radius: 10px;
+border-bottom: 1px solid black;
+margin: 5px 0;
+max-height: 5vh;
+border: none !important;
+background-color: rgba(255, 255, 255, 0.5);
+color: black;
+font-size: 20px;
+    
+}
+.formelementi {
+    height: 50%;
+    width: 100%;
+    background-color:transparent;
+    min-height: 4vh;
+    min-width: 40%;
+    margin: 10px ;
+    display: grid;
+    max-width: 50%;
+    padding: 3px; 
+    
+}
+.kayıtolFormu input{
+    display: grid;
+    padding: 3px;
+    margin: 10px;
+    height: 50%;
+    width: 100%;
+    background-color:white;
+    min-height: 4vh;
+    min-width: 40%;
+    border:1px solid black;
+    border-radius: 10px;
+    
+    
+}
+.kayıtolFormu input:focus{
+    background-color:#4b4b4b !important; 
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.kayıtolFormu input[type="submit"]:hover{
+    background-color:crimson !important;
+    transition: 1000ms;
+    transform: translateY(4px);
+    border-radius: 10px;
+    outline: darkblue;
+    border: none;
+   
+
+}
+
+
+div.container{
+    height: 90vh;
+}
+
+
+body{
+    
+}
